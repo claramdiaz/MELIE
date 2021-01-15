@@ -14,45 +14,45 @@
 
 <body>
     
-    <header>
+<header>
 
-        <div class="topHeader">
-        <img src="images/logo-mercado-liebre.svg" alt="logoML">
-        <form action="#" method="GET" id="searchBar">
-            <input type="search" placeholder="Buscar productos, marcas y más" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <p id="compraCuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </p>
-        </div>
-        
-        <div class="bottomHeader">
-    
-        <nav id="navBar">
-            <ul>
-                <li><a href="https://ml-jimena.herokuapp.com/">Inicio</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-        </nav>
-        
-        <nav id="loginBar">
-            <ul>
-                <li><a href="https://ml-jimena.herokuapp.com/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="https://ml-jimena.herokuapp.com/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        
-        <div class = "burger-menu">
-            <i class = "fa fa-bars burger"></i>
-        </div>
+    <div class="topHeader">
+    <img src="images/logo-mercado-liebre.svg" alt="logoML">
+    <form action="#" method="GET" id="searchBar">
+        <input type="search" placeholder="Buscar productos, marcas y más" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <p id="compraCuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </p>
     </div>
-    </header>
+    
+    <div class="bottomHeader">
+
+    <nav id="navBar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </nav>
+    
+    <nav id="loginBar">
+        <ul>
+            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+    
+    <div class = "burger-menu">
+        <i class = "fa fa-bars burger"></i>
+    </div>
+</div>
+</header>
 
 <main>
 
-    <form action="/registro" method="POST">
+    <form action="/" method="POST">
 
         <input type="text" placeholder="Nombre de usuario" name="usuario" id="usuario">
     

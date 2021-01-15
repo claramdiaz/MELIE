@@ -4,57 +4,56 @@
 <head>
 
     <meta charset="UTF-8">
-            <title> Bienvenidxs a Mercado Liebre</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-            <link href="https://fontawesome.com/icons?d=gallery&m=free" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+    <title>MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
     
-    <header>
+<header>
 
-        <div class="topHeader">
-        <img src="images/logo-mercado-liebre.svg" alt="logoML">
-        <form action="#" method="GET" id="searchBar">
-            <input type="search" placeholder="Buscar productos, marcas y más" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <p id="compraCuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </p>
-        </div>
-        
-        <div class="bottomHeader">
-    
-        <nav id="navBar">
-            <ul>
-                <li><a href="https://ml-jimena.herokuapp.com/">Inicio</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-        </nav>
-        
-        <nav id="loginBar">
-            <ul>
-                <li><a href="https://ml-jimena.herokuapp.com/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="https://ml-jimena.herokuapp.com/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-        
-        <div class = "burger-menu">
-            <i class = "fa fa-bars burger"></i>
-        </div>
+    <div class="topHeader">
+    <img src="images/logo-mercado-liebre.svg" alt="logoML">
+    <form action="#" method="GET" id="searchBar">
+        <input type="search" placeholder="Buscar productos, marcas y más" name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <p id="compraCuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </p>
     </div>
-    </header>
+    
+    <div class="bottomHeader">
+
+    <nav id="navBar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </nav>
+    
+    <nav id="loginBar">
+        <ul>
+            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+    
+    <div class = "burger-menu">
+        <i class = "fa fa-bars burger"></i>
+    </div>
+</div>
+</header>
 
 
 <main>
 
-<form action="/registro" method="POST">
+<form action="/" method="POST">
 
     <input type="text" placeholder="Nombre y apellido" name="nombreCompleto" id="nombreCompleto">
 
@@ -62,31 +61,38 @@
 
     <input type="email" placeholder="E-mail" name="email" id="email">
 
-    <label for="fechaNacimiento"> Fecha de nacimiento </label>
+    <label for="fechaNacimiento" class="titulo"> Fecha de nacimiento </label>
     <input type="date" name="fechaNacimiento">
 
     <input type="text" placeholder="Domicilio" name="domicilio" id="domicilio">
 
-    <label for="perfil"> Perfil de usuario </label>
-    <label for="vendedor">Vender</label>
+    <label for="perfil" class="titulo" id="perfilUsuario"> Perfil de usuario </label>
+<section>
     <input type="radio" id="cajita" name="perfil" value="Vender">
-    <label for="comprador">Comprar</label>
+    <label for="vendedor">Vender</label>
     <input type="radio" id="cajita" name="perfil" value="Comprar">
+    <label for="comprador">Comprar</label>
+</section>
 
-    <label for="categoriasInteres"> Categorías de interés </label>
+    <label for="categoriasInteres" class="titulo" id="categoria"> Categorías de interés </label>
+
+<section>
     <input type="checkbox" id="cajita" name="categoriasInteres" value="Electro">
     <label for="categoriasInteres">Electro</label>
-    <input type="checkbox" id="cajita" name="categoriasInteres" value="Moda">
+    <br> <input type="checkbox" id="cajita" name="categoriasInteres" value="Moda">
     <label for="categoriasInteres">Moda</label>
-    <input type="checkbox" id="cajita" name="categoriasInteres" value="Hogar">
+    <br> <input type="checkbox" id="cajita" name="categoriasInteres" value="Hogar">
     <label for="categoriasInteres">Hogar</label>
-    <input type="checkbox" id="cajita" name="categoriasInteres" value="Juguetería">
+    <br> <input type="checkbox" id="cajita" name="categoriasInteres" value="Juguetería">
     <label for="categoriasInteres">Juguetería</label>
-    <input type="checkbox" id="cajita" name="categoriasInteres" value="Vida Sana">
+    <br> <input type="checkbox" id="cajita" name="categoriasInteres" value="Vida Sana">
     <label for="categoriasInteres">Vida Sana</label>
+</section>
 
+<section>
     <label for="fotoUsuario"> Subir una foto de perfil </label>
     <input type="file" name="fotoUsuario" accept=".jpg .jpeg .png .gif">
+</section>
 
     <input type="password" placeholder="Contraseña" name="password" pattern=".{8}">
     
